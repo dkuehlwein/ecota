@@ -10,6 +10,7 @@ while True:
     sleep(5)
     now = datetime.now()
     file_name = f'/home/pi/data/{now}.jpg'
+    print(f'Saving img at {file_name}')
     camera.capture(file_name)
     camera.stop_preview()
     sleep(295)
